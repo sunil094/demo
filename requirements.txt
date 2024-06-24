@@ -2,3 +2,4 @@ langchain
 langchain_huggingface
 PyPDF2
 streamlit
+langchain_community
