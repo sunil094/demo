@@ -1,5 +1,0 @@
-langchain_huggingface
-streamlit
-dotenv
-PyPDF2
-langchain
