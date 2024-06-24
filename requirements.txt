@@ -4,4 +4,4 @@ PyPDF2
 streamlit
 langchain_community
 InstructorEmbedding
-sentence-transformers==2.2.2
+sentence-transformers
