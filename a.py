@@ -71,7 +71,7 @@ def get_text_chunks(text):
     return chunks
 
 def get_vectorstore(text_chunks):
-    embeddings = HuggingFaceEndpoint(repo_id="jinaai/jina-embeddings-v2-base-en", max_length=128, temperature=0.7, token=sec_key)
+    embeddings = HuggingFaceInstructEmbeddings(model_name="hkunlp/instructor-xl")
     vectorstore = FAISS.from_texts(texts=text_chunks, embedding=embeddings)
     return vectorstore
 
