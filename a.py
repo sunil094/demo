@@ -1,20 +1,14 @@
 from langchain_huggingface import HuggingFaceEndpoint
 import streamlit as st
-from dotenv import load_dotenv
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import HuggingFaceInstructEmbeddings
 from langchain.vectorstores import FAISS
-from langchain.memory import ConversationBufferMemory
-from langchain.chains import ConversationalRetrievalChain
-from langchain.chains.question_answering import load_qa_chain
 from langchain.retrievers import ContextualCompressionRetriever
 from langchain.retrievers.document_compressors import FlashrankRerank
 from langchain.chains import RetrievalQA
 
 import os
-
-load_dotenv()
 
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
 
